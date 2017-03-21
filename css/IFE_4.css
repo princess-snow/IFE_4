@@ -1,0 +1,31 @@
+html, body, .container, .leftTop, .rightBottom, .square {
+    margin: 0;
+    padding: 0;
+}
+
+.square {
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    /*能水平垂直居中*/
+    position: absolute;
+    /*position: fixed; 同样能水平垂直居中*/
+    /*position: relative;不能垂直居中*/
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+.leftTop,.rightBottom{
+    width: 50px;
+    height:50px;
+    background: #fc0;
+}
+.leftTop{
+    border-bottom-right-radius: 50px;
+}
+.rightBottom{
+    border-top-left-radius: 50px;
+    margin:100px 0 0 350px;
+}
